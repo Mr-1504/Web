@@ -1,0 +1,85 @@
+html, body {
+    background-color: #f5f5f7;
+}
+
+.promotion {
+    text-align: center;
+    background-color: #f5f5f7;
+    > img {
+        width: 1280px;
+        max-width: 100%;
+    }
+    > h3 {
+        margin: 0;
+        padding: 15px;
+        background-color: white;
+    }
+}
+
+.offers {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    > .of__producttype ul {
+        list-style: none;
+        display: flex;
+        > li {
+            margin: 10px 1vw 10px 0;
+            padding: 5px 2vw 5px 15px;
+        }
+        > .active {
+            border-bottom: 2px solid black;
+        }
+        > li:hover {
+            cursor: pointer;
+            background-color: #e8e8e8;
+        }
+    }
+    > .of__list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: none;
+        > div {
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 3vw 0 3vw 0;
+            margin: 10px 0 10px 0;
+            > .ofl--title {
+                > img {
+                    height: 30px;
+                }
+            }
+            > .ofl--item  {
+                text-align: center;
+                > div img {
+                    height: 250px;
+                    width: 50px;
+                    object-fit: cover;
+                    margin: 0 auto;
+                }
+                > div h6 {
+                    width: fit-content;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    border-top: 1px solid #e8e8e8;
+                }
+                > div button {
+                    width: 50%;
+                    background-color: black;
+                    border: 1px solid black;
+                    color: white;
+                    border-radius: 10px;
+                }
+                > div button:hover {
+                    background-color: white;
+                    border: 1px solid black;
+                    color: black;
+                }
+            }
+        }
+    }
+}

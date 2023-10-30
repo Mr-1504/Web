@@ -1,0 +1,58 @@
+.promo {
+    > img {
+        width: 100%;
+    }
+    > h4 {
+        color: white;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+    }
+}
+.products {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    > .pd__title {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    > .airpods {
+        background-image: url("./img_accessories/airpods_promo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        border-bottom: 2px solid #f5f5f5;
+        border-top: 2px solid #f5f5f5;
+    }
+    > .charger {
+        min-height: 200px;
+        border-bottom: 2px solid #f5f5f5;
+        border-top: 2px solid #f5f5f5;
+    }
+    > .pd__item {
+        box-sizing: border-box;
+        > div {
+            margin: 20px 10px 20px 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            > img {
+                max-width: 80%;
+            }
+            > span {
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+        }
+        > div:hover {
+            box-shadow: 0 4px 8px 0 rgba(160, 160, 160, 0.2), 0 6px 20px 0 rgba(160, 160, 160, 0.19);
+            cursor: pointer;
+        }
+    }
+}

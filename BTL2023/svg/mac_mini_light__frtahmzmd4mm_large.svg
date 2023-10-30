@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 54">
+  <defs>
+    <style>
+      .a {
+        fill: #1d1d1f;
+      }
+    </style>
+  </defs>
+  <title>mac_mini_large_</title>
+  <path class="a" d="M0,43v6a.934.934,0,0,0,1,1H27a.934.934,0,0,0,1-1V43Zm23.5,5.454a.934.934,0,1,1,.969-.932A.949.949,0,0,1,23.5,48.454Z"/>
+</svg>

@@ -1,0 +1,134 @@
+.productlist {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    > .pl__headertext {
+        padding: 15px 0 15px 0;
+        margin: 0 0 15px 0;
+        > p {
+            margin: 0;
+            padding: 5px 0 0 0;
+        }
+        > h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    > .pd__optionboard {
+        margin: 3px 0 3px 0;
+        > .pd__choice {
+            border-left: 1px solid var(--greyLight2);
+            margin: 10px 0 10px 0;
+            > p {
+                font-weight: bold;
+                margin: 0;
+            }
+            > .pd__choice--af p {
+                font-weight: bold;
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+    > .pd__preview > div img {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: none;
+    }
+    > .pd__preview {
+        background-color: #fafafa;
+        margin: 20px 0 20px 0;
+        justify-content: center;
+        align-items: center;
+        > .pd__placeholderpv {
+            align-items: center;
+            text-align: center;
+            > p {
+                margin: 20px 0 20px 0;
+                padding: 0;
+            }
+        }
+        > .pdpv__full {
+            display: flex;
+            > .pdpv__full--outerbox {
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+                justify-content: center;
+                > img {
+                    max-width: 80%;
+                }
+                > #pv_full_case {
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+.confirmorder {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    > div {
+        margin-left: 15px;
+        > h3 {
+            margin: 0;
+            padding: 0;
+        }
+        > p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    > button {
+        margin-right: 15px;
+        width: 50%;
+        border: 3px solid #1d1d1f;
+        background-color: #1d1d1f;
+        border-radius: 10px;
+        color: white;
+    }
+    > button:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+.detail {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    > table {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 90%;
+        width: 720px;
+        border-collapse: collapse;
+        text-align: left;
+    }
+    > table td {
+        border: 1px solid var(--greyLight);
+        padding: 5px 5px 5px 15px;
+    }
+    > table tr td:first-of-type {
+        max-width: 50px;
+    }
+    > .dt__more {
+        text-decoration: underline;
+        color: #0071e3;
+    }
+    > .dt__more:hover {
+        cursor: pointer;
+    }
+}

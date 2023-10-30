@@ -31,6 +31,25 @@
       margin-bottom: 3px;
     }
   }
+  @media only screen and (max-width: 800px) {
+    .content_fix{
+      font-size: 40px !important; 
+    }
+    .footer1__copyright{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #header__home2{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    #header__home1{
+      display: none;
+    }
+  }
+
   @keyframes zoomin {
     to{
         height: 390px;

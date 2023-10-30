@@ -1,0 +1,228 @@
+p {
+    font-size: small;
+}
+
+.sale {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 55%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.lc {
+    border: 1px solid black;
+    margin: 0 30px 20px;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.lc11 {
+    border-radius: 10px;
+    background-color: rgb(79, 79, 79);
+    border: 1px solid black;
+    margin: 20px 30px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.lc12 {
+    border-radius: 10px;
+    background: url(../img/Ipad/muaipad/silve-la-mau-gi-1.jpg);
+    border: 1px solid black;
+    margin: 20px 30px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    float: left;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+button:hover {
+    color: blue;
+}
+
+#thanhtoan {
+    position: fixed;
+    top: 50px;
+    right: 20%;
+}
+
+@media only screen and (max-width: 3000px) {
+    #luachon1 {
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    #luachon2 {
+        display: none;
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    #luachon3 {
+        display: none;
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    #luachon4 {
+        display: none;
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    .anhipad {
+        position: fixed;
+        height: auto;
+        left: 30px;
+        width: 60%;
+    }
+    .anhipad1,
+    .anhipad2,
+    .anhipad3 {
+        display: none;
+        position: fixed;
+        height: auto;
+        left: 30px;
+        width: 60%;
+    }
+    #muane {
+        display: none;
+        position: fixed;
+        right: 20px;
+        top: 100px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgb(45, 45, 255);
+    }
+    #trolai4 {
+        display: none;
+        position: fixed;
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #luachon1,
+    #luachon2,
+    #luachon3,
+    #luachon4 {
+        position: fixed;
+        right: 10px;
+        width: 35%;
+        text-align: center;
+    }
+    .chu {
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+    #muane {
+        display: none;
+        position: fixed;
+        right: 10px;
+        top: 200px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgb(45, 45, 255);
+    }
+    #trolai4 {
+        display: none;
+        position: fixed;
+        right: 25%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #luachon1,
+    #luachon2,
+    #luachon3,
+    #luachon4 {
+        position: fixed;
+        top: 110px;
+        right: 10px;
+        width: 35%;
+        text-align: center;
+    }
+    .chu {
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #luachon1,
+    #luachon2,
+    #luachon3,
+    #luachon4 {
+        position: fixed;
+        top: 320px;
+        right: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .chu {
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+    .chu1 {
+        font-size: large;
+    }
+    .chu3 {
+        font-size: medium;
+        margin-bottom: 0;
+    }
+    .chu4,
+    .chu6 {
+        font-size: small;
+    }
+    .anhipad {
+        position: fixed;
+        height: auto;
+        left: 75px;
+        width: 60%;
+    }
+    .anhipad1,
+    .anhipad2,
+    .anhipad3 {
+        display: none;
+        position: fixed;
+        height: auto;
+        left: 75px;
+        width: 60%;
+    }
+    #muane {
+        display: none;
+        position: fixed;
+        right: 10px;
+        top: 400px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgb(45, 45, 255);
+    }
+    #trolai4 {
+        display: none;
+        position: fixed;
+        right: 40%;
+        bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 320px) {}

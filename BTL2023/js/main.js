@@ -12,11 +12,11 @@ var activeIcon = document.querySelector('.header__icon');
         }
 //text dropdown 
 var activeTextMac = document.querySelectorAll('.dropbtn')[1];
-var activeTextIpad =document.querySelectorAll('.dropbtn')[2];
-var activeTextIphone =document.querySelectorAll('.dropbtn')[3];
-var activeTextWatch =document.querySelectorAll('.dropbtn')[5];
-var activeTextTv =document.querySelectorAll('.dropbtn')[6];
-var activeTextpk =document.querySelectorAll('.dropbtn')[7];
+var activeTextIpad =document.querySelectorAll('.dropbtn')[3];
+var activeTextIphone =document.querySelectorAll('.dropbtn')[5];
+var activeTextWatch =document.querySelectorAll('.dropbtn')[7];
+var activeTextTv =document.querySelectorAll('.dropbtn')[9];
+var activeTextpk =document.querySelectorAll('.dropbtn')[11];
 var dropMac = document.querySelector('.dropdown-content-mac');
 var dropIpad = document.querySelector('.dropdown-content-ipad');
 var dropIphone = document.querySelector('.dropdown-content-iphone');
@@ -118,6 +118,7 @@ activeTextpk.onclick = function (){
     if (headerTop.offsetHeight == '50'&& bodyWidth.offsetWidth >=800) {
         headerTop.style="animation: zoomin1 1.5s; animation-fill-mode: forwards;"
         droppk.style="visibility:visible;"
+        dropTv.style="visibility:hidden;"
         dropWatch.style="visibility:hidden;"
         dropMac.style="visibility:hidden;"
         dropIpad.style="visibility:hidden;"
