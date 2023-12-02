@@ -569,7 +569,7 @@ function test_name() {
 }
 
 function tnum(num) {
-    return /^84+[35789][0-9]{8}$/.test(num) || /^0+[35789][0-9]{8}$/.test(num);
+    return /^\+84+[35789][0-9]{8}$/.test(num) || /^84+[35789][0-9]{8}$/.test(num) || /^0+[35789][0-9]{8}$/.test(num);
 }
 
 function test_num() {
