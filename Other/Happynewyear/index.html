@@ -43,6 +43,17 @@
             color: #873737;
         }
         
+        input,
+        select {
+            display: inline-block;
+            margin-bottom: 13px;
+            border: 0;
+            background: #e9e9e9;
+            padding: 10px 13px;
+            border-radius: 4px;
+            outline: none;
+        }
+        
         .buttons {
             margin-top: 20px;
             display: flex;
@@ -149,7 +160,26 @@
         <div class="greeting" id="main">
             <div class="l1"><img class="l11" src="l1.png" alt=""></div>
             <div class="l2"><img src="l2.png" alt=""></div>
-            <h1>Chào <span id="name">Linh</span>, đ ến năm mới rồi. Linh có muốn nhận lì xì không?</h1>
+            <h1>Chào <span id="name">Linh</span>, đến năm mới rồi. Linh có muốn nhận lì xì không?</h1>
+            <div class="group">
+                <select id="nganHang" name="nganHang">
+                    <option value="vietcombank">Chọn ngân hàng</option>
+                    <option value="vietcombank">Vietcombank (VCB)</option>
+                    <option value="techcombank">Techcombank (TCB)</option>
+                    <option value="bidv">BIDV</option>
+                    <option value="acb">ACB</option>
+                    <option value="vib">VIB</option>
+                    <option value="mbbank">MB Bank</option>
+                    <option value="vpbank">VPBank</option>
+                    <option value="shb">SHB</option>
+                    <option value="agribank">Agribank</option>
+                    <option value="eximbank">Eximbank</option>
+                    <option value="scb">SCB</option>
+                    <option value="hdbank">HDBank</option>
+                    <option value="tpbank">TPBank</option>
+                </select>
+                <input type="number" id="stk" placeholder="Nhập STK nhận lì xì...">
+            </div>
             <div class="buttons">
                 <div>
                     <button id="yesBtn">NHẬN LÌ XÌ</button>
