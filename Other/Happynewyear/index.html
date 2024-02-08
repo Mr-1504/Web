@@ -108,16 +108,23 @@
         .l1,
         .l2 {
             position: absolute;
-            animation: blink-animation 2s infinite alternate;
-            /* Thực hiện chớp liên tục */
+            animation: spin-blink-animation 3s linear infinite;
+            /* Thực hiện xoay và chớp liên tục */
+            transform-origin: center center;
+            /* Đặt trung tâm xoay ở giữa */
         }
         
-        @keyframes blink-animation {
+        @keyframes spin-blink-animation {
             0% {
+                transform: rotate(0deg);
                 opacity: 1;
             }
-            100% {
+            50% {
                 opacity: 0;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 1;
             }
         }
         
@@ -136,10 +143,13 @@
 
 <body>
     <div class="container">
-        <div class="l1"><img src="l1.png" alt=""></div>
-        <div class="l2"><img src="l2.png" alt=""></div>
+        <center style="display:none"><audio id="myAudio" controls autoplay>
+            <source  src="(Audio) 5144951343775-Trimmed by FlexClip.mp3" >
+        </audio></center>
         <div class="greeting" id="main">
-            <h1>Chào <span id="name">Linh</span>, đến năm mới rồi. Linh có muốn nhận lì xì không?</h1>
+            <div class="l1"><img class="l11" src="l1.png" alt=""></div>
+            <div class="l2"><img src="l2.png" alt=""></div>
+            <h1>Chào <span id="name">Linh</span>, đ ến năm mới rồi. Linh có muốn nhận lì xì không?</h1>
             <div class="buttons">
                 <div>
                     <button id="yesBtn">NHẬN LÌ XÌ</button>
@@ -150,6 +160,7 @@
             </div>
         </div>
     </div>
+
     <script>
         document.addEventListener('click', function() {
             var audio = document.getElementById('myAudio');
