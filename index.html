@@ -2,24 +2,614 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trương Văn Minh</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="load.jpg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7ff4ee27c3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="./svg/apple.svg">
+    <title>BEA Store</title>
 </head>
 
 <body>
-    <div>
-        <img src="giphy.gif" alt="Animated GIF">
-    </div>
-    <article>
-        <li><a class="minh" href="BTL2023/index.html">BTL 2023: Bea store</a></li>
-        <li><a class="minh" href="Other/Happynewyear/index.html">other</a></li>
-    </article>
+    <!-- Header -->
+    <header class="header-top">
+        <ul>
+            <ul class="dropdown">
+                <li class="dropbtn"><img class="header__icon" id="header__home1" src="./img/unauthorized_reseller no-bg.png" alt="apple"/></li>
+                <li class="dropbtn2"><a href="./index.html"><img class="header__icon"  id="header__home2" src="./img/unauthorized_reseller no-bg.png" alt="apple" /></a></li>
+            </ul>
+            <ul class="dropdown">
+                <li class="dropbtn nav_res_2">Mac</li>
+                <li class="dropbtn nav_res_1"><a href="./mac/main_mac.html">Mac</a></li>
+                <li class="dropdown-content-mac">
+                    <div class="dropdown-content__left">
+                        <a href="./mac/main_mac.html">Khám phá Mac</a>
+                        <a href="./mac/main_mac.html">Khám Phá Tất Cả Mac</a>
+                        <a href="./mac/main_mac.html">MacBook Air</a>
+                        <a href="./mac/main_mac.html">MacBook Pro</a>
+                        <a href="./mac/main_mac.html">iMac</a>
+                        <a href="./mac/main_mac.html">Mac mini</a>
+                        <a href="./mac/main_mac.html">Mac Studio</a>
+                        <a href="./mac/main_mac.html">Mac Pro</a>
+                        <a href="./mac/main_mac.html">So Sánh Mac</a>
+                    </div>
+                    <div class="dropdown-content__center">
+                        <a href="./mac/main_mac.html">Mua Mac</a>
+                        <a href="./mac/main_mac.html">Mua Mac</a>
+                        <a href="./mac/main_mac.html">Phụ kiện Mac</a>
+                        <a href="./mac/main_mac.html">Apple Trade In</a>
+                        <a href="./mac/main_mac.html">Tài Chính</a>
+                    </div>
+                    <div class="dropdown-content__right">
+                        <a href="./mac/main_mac.html">Tìm Hiểu Thêm Về Mac</a>
+                        <a href="./mac/main_mac.html">Hỗ Trợ Mac</a>
+                        <a href="./mac/main_mac.html">macOS Sonoma</a>
+                        <a href="./mac/main_mac.html">Mac Cho Doanh Nghiệp</a>
+                        <a href="./mac/main_mac.html">Giáo Dục</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li class="dropbtn nav_res_2">iPad</li>
+                <li class="dropbtn nav_res_1"><a href="./iPad/ipad.html">iPad</a></li>
+                <li class="dropdown-content-ipad">
+                    <div class="dropdown-content__left">
+                        <a href="./iPad/ipad.html">Khám phá iPad</a>
+                        <a href="./iPad/ipad.html">Khám Phá Tất Cả iPad</a>
+                        <a href="./iPad/ipad.html">iPad Air</a>
+                        <a href="./iPad/ipad.html">iPad Pro</a>
+                        <a href="./iPad/ipad.html">iPad</a>
+                        <a href="./iPad/ipad.html">iPad mini</a>
+                        <a href="./iPad/ipad.html">Bàn Phím</a>
+                        <a href="./iPad/ipad.html">Apple Pencil</a>
+                        <a href="./iPad/ipad.html">So Sánh iPad</a>
+                    </div>
+                    <div class="dropdown-content__center">
+                        <a href="./iPad/ipad.html">Mua iPad</a>
+                        <a href="./iPad/ipad.html">Mua iPad</a>
+                        <a href="./iPad/ipad.html">Phụ kiện iPad</a>
+                        <a href="./iPad/ipad.html">Apple Trade In</a>
+                        <a href="./iPad/ipad.html">Tài Chính</a>
+                    </div>
+                    <div class="dropdown-content__right">
+                        <a href="./iPad/ipad.html">Tìm Hiểu Thêm Về iPad</a>
+                        <a href="./iPad/ipad.html">Hỗ Trợ iPad</a>
+                        <a href="./iPad/ipad.html">iPadOS</a>
+                        <a href="./iPad/ipad.html">iPad Cho Doanh Nghiệp</a>
+                        <a href="./iPad/ipad.html">Giáo Dục</a>
+                    </div>
+                </li>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li class="dropbtn nav_res_2">iPhone</li>
+                <li class="dropbtn nav_res_1"><a href="iPhone/iPhone.html">iPhone</a></li>
+                <li class="dropdown-content-iphone">
+                    <div class="dropdown-content__left">
+                        <a href="">Khám phá iPhone</a>
+                        <a href="iPhone/iPhone.html">Khám Phá Tất Cả iPhone</a>
+                        <a href="iPhone/iPhone.html">iPhone 15 Pro</a>
+                        <a href="iPhone/iPhone.html">iPhone 14 Pro</a>
+                        <a href="iPhone/iPhone.html">iPhone 13</a>
+                        <a href="iPhone/iPhone.html">iPhone mini</a>
+                        <a href="iPhone/iPhone.html">iPhone SE</a>
+                        <a href="iPhone/iPhone.html">Apple Pencil</a>
+                        <a href="iPhone/iPhone.html">So Sánh iPhone</a>
+                    </div>
+                    <div class="dropdown-content__center">
+                        <a href="iPhone/iPhone.html">Mua iPhone</a>
+                        <a href="iPhone/iPhone.html">Mua iPhone</a>
+                        <a href="iPhone/iPhone.html">Phụ kiện iPhone</a>
+                        <a href="iPhone/iPhone.html">Apple Trade In</a>
+                        <a href="iPhone/iPhone.html">Tài Chính</a>
+                    </div>
+                    <div class="dropdown-content__right">
+                        <a href="iPhone/iPhone.html">Tìm Hiểu Thêm Về iPhone</a>
+                        <a href="iPhone/iPhone.html">Hỗ Trợ iPhone</a>
+                        <a href="iPhone/iPhone.html">iOS</a>
+                        <a href="iPhone/iPhone.html">Ví, Pay</a>
+                        <a href="iPhone/iPhone.html">Giáo Dục</a>
+                    </div>
+                </li>
 
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li class="dropbtn nav_res_2">Watch</li>
+                <li class="dropbtn nav_res_1"><a href="./appleWatch/watch.html">Watch</a></li>
+                <li class="dropdown-content-watch">
+                    <div class="dropdown-content__left">
+                        <a href="./appleWatch/watch.html">Khám phá Watch</a>
+                        <a href="./appleWatch/watch.html">Khám Phá Tất Cả Apple Watch</a>
+                        <a href="./appleWatch/watch.html">Apple Watch Series 9</a>
+                        <a href="./appleWatch/watch.html">Apple Watch Ultra 2</a>
+                        <a href="./appleWatch/watch.html">Apple Watch SE</a>
+                        <a href="./appleWatch/watch.html">Apple Watch Nike</a>
+                        <a href="./appleWatch/watch.html">Bàn Phím</a>
+                        <a href="./appleWatch/watch.html">Tại sao nên dùng Apple Watch</a>
+                        <a href="./appleWatch/watch.html">So Sánh Watch</a>
+                    </div>
+                    <div class="dropdown-content__center">
+                        <a href="./appleWatch/watch.html">Mua Apple Watch</a>
+                        <a href="./appleWatch/watch.html">Mua Apple Watch</a>
+                        <a href="./appleWatch/watch.html">Phụ kiện Apple Watch</a>
+                        <a href="./appleWatch/watch.html">Apple Trade In</a>
+                        <a href="./appleWatch/watch.html">Tài Chính</a>
+                    </div>
+                    <div class="dropdown-content__right">
+                        <a href="./appleWatch/watch.html">Tìm Hiểu Thêm Về Apple Watch</a>
+                        <a href="./appleWatch/watch.html">Hỗ Trợ Apple Watch</a>
+                        <a href="./appleWatch/watch.html">WatchOS 10</a>
+                        <a href="./appleWatch/watch.html">Apple Watch Cho Doanh Nghiệp</a>
+                        <a href="./appleWatch/watch.html">Giáo Dục</a>
+                    </div>
+                </li>
+
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li class="dropbtn nav_res_2">TV</li>
+                <li class="dropbtn nav_res_1"><a href="#">TV</a></li>
+                <li class="dropdown-content-tv">
+                    <div class="dropdown-content__left">
+                        <a href="">Khám phá TV</a>
+                        <a href="">Khám Phá Tất Cả Apple TV</a>
+                        <a href="">TV Series 9</a>
+                        <a href="">TV Ultra 2</a>
+                        <a href="">TV SE</a>
+                        <a href="">TV Nike</a>
+                        <a href="">Bàn Phím</a>
+                        <a href="">Tại sao nên dùng Apple TV</a>
+                        <a href="">So Sánh TV</a>
+                    </div>
+                    <div class="dropdown-content__center">
+                        <a href="">Mua Apple TV</a>
+                        <a href="">Mua Apple TV</a>
+                        <a href="">Phụ kiện Apple TV</a>
+                        <a href="">Apple Trade In</a>
+                        <a href="">Tài Chính</a>
+                    </div>
+                    <div class="dropdown-content__right">
+                        <a href="">Tìm Hiểu Thêm Về Apple TV</a>
+                        <a href="">Hỗ Trợ Apple TV</a>
+                        <a href="">TVOS 10</a>
+                        <a href="">Apple TV Cho Doanh Nghiệp</a>
+                        <a href="">Giáo Dục</a>
+                    </div>
+                </li>
+
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li class="dropbtn nav_res_2">Accessories</li>
+                <li class="dropbtn nav_res_1"><a href="#">Accessories</a></li>
+                <li class="dropdown-content-pk">
+                    <div class="dropdown-content__left">
+                        <a href="">Khám phá Phụ kiện</a>
+                        <a href="">Khám Phá Tất Cả Apple Phụ kiện</a>
+                        <a href="">Phụ kiện SE</a>
+                        <a href="">Phụ kiện Nike</a>
+                        <a href="">Bàn Phím</a>
+                        <a href="">Tại sao nên dùng Apple Phụ kiện</a>
+                        <a href="">So Sánh Phụ kiện</a>
+                    </div>
+                    <div class="dropdown-content__center">
+                        <a href="">Mua Apple Phụ kiện</a>
+                        <a href="">Phụ kiện Apple Phụ kiện</a>
+                        <a href="">Apple Trade In</a>
+                        <a href="">Tài Chính</a>
+                    </div>
+                    <div class="dropdown-content__right">
+                        <a href="">Tìm Hiểu Thêm Về Apple Phụ kiện</a>
+                        <a href="">Hỗ Trợ Apple Phụ kiện</a>
+                        <a href="">Apple Phụ kiện Cho Doanh Nghiệp</a>
+                        <a href="">Giáo Dục</a>
+                    </div>
+                </li>
+
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <a href="./support/support.html">
+                    <li class="dropbtn">Support</li>
+                </a>
+
+            </ul>
+            <ul class="dropdown">
+                <li data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./svg/search.svg" alt="search" /></li>
+            </ul>
+            <ul class="dropdown">
+                <li data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./svg/shopping-bag.svg" alt="shopping bag" /></li>
+            </ul>
+        </ul>
+    </header>
+
+    <!-- information -->
+    <div class="information">
+        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Thanh toán dần, thời hạn đến 24 tháng và chỉ trả
+      trước 20%. Tìm hiểu thêm
+      <img src="./svg/right-arrow.svg" alt="" />
+    </a>
+    </div>
+    </div>
+    <div class="information information-2">
+        <!-- Button trigger modal -->
+        <a class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Shop online
+    </a>
+
+        <!-- Modal -->
+        <div class="modal fade blur" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Comming Soon</h5>
+                        <svg id="icon_times" type="button" data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path
+                d="M12.12,10l4.07-4.06a1.5,1.5,0,1,0-2.11-2.12L10,7.88,5.94,3.81A1.5,1.5,0,1,0,3.82,5.93L7.88,10,3.81,14.06a1.5,1.5,0,0,0,0,2.12,1.51,1.51,0,0,0,2.13,0L10,12.12l4.06,4.07a1.45,1.45,0,0,0,1.06.44,1.5,1.5,0,0,0,1.06-2.56Z">
+              </path>
+            </svg></button>
+                    </div>
+                    <div class="modal-body">
+                        Tính năng đang được đội ngũ lập trình viên phát triển, sẽ được khả dụng trong thời gian sớm nhất Features developed by a team of programmers, will be used as soon as possible
+                    </div>
+                </div>
+            </div>
+        </div>
+        một phương thức mua hàng mới bạn có thể trải nghiệm
+    </div>
+
+    <!-- SECTIONS -->
+    <section class="section1">
+        <div class="background"></div>
+
+        <div class="top__title">
+            <h1>iPhone 14 Pro</h1>
+            <h3>Mới lịm tim.</h3>
+            <div class="top__title--links">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Tìm hiểu thêm <img src="./svg/right-arrow-blue.svg" alt="" /></a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Mua <img src="./svg/right-arrow-blue.svg" alt="" />
+        </a>
+            </div>
+        </div>
+        <div class="center__title">
+            <img class="center__title-icon" src="./img/unauthorized_reseller no-bg.png" alt="">
+        </div>
+        <div class="bottom__title bottom__title-section1">
+            <h2>iPhone 14 Pro</h2>
+            <h2>Pre-order starting at</h2>
+            <h2>6:00 a.m.PST on 30.9</h2>
+            <h2>Available 30.9</h2>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="background" style="background-image: url(./img/s-2.jpg)"></div>
+
+        <div class="top__title">
+            <h1 class="black">iPhone 13</h1>
+            <h3 class="black">Yêu sức mạnh. Yêu luôn giá trị.</h3>
+            <div class="top__title--links">
+                <a href="" class="dark-blue " data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Mua <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+            </div>
+        </div>
+
+        <div class="bottom__title">
+            <h2 class="black">iPhone 13 mini</h2>
+            <h2>Pre-order starting at</h2>
+            <h2>5:00 a.m.PST on 11.6</h2>
+            <h2>Available 11.13</h2>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="background" style="background-image: url(./img/s-3.jpg)"></div>
+
+        <div class="top__title">
+            <h1 class="logo--inline"><img src="./svg/apple.svg" alt="apple" />WATCH</h1>
+            <h4>SERIES 9</h4>
+            <h3>Tất cả đi cùng tốc độ cuộc sống.</h3>
+            <div class="top__title--links">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Tìm hiểu thêm <img src="./svg/right-arrow-blue.svg" alt="" /></a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Mua <img src="./svg/right-arrow-blue.svg" alt="" /></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 section4__item">
+                <div class="background" style="background-image: url(./img/s-4.1.jpg)"></div>
+
+                <div class="top__title">
+                    <h1 class="black">iPad Air</h1>
+                    <h3 class="black">Mạnh mẽ. Màu sắc. Tuyệt vời.</h3>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Mua <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 section4__item">
+                <div class="background" style="background-image: url(./img/ipadmini2.jpg)"></div>
+
+                <div class="top__title">
+                    <div class="homePod">
+                        <h1 class="black">iPad mini</h1>
+                        <h3 class="black" >Siêu nhanh để làm việc, giải trí và sáng tạo</h3>
+                        <div class="top__title--links">
+                            <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                            <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Mua
+                <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 section4__item">
+                <div class="background one" style="background-image: url(./img/s-4.3.jpg)"></div>
+
+                <div class="top__title">
+                    <h1 class="black logo--inline">
+                        <img src="./svg/apple _black.svg" alt="apple" />
+                        <p>One</p>
+                    </h1>
+                    <h3 class="black">
+                        Gói tối đa sáu dịch vụ của Apple. Và tận hưởng nhiều hơn với chi phí ít hơn.
+                    </h3>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Thử miễn phí <img src="./svg/diagonal-arrow.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 section4__item">
+                <div class="background background--macbook" style="background-image: url(./img/macbook1.jpg)"></div>
+
+                <div class="top__title">
+                    <h4>Coming late 2023</h4>
+                    <h1 class="black logo--inline">
+                        <img src="./svg/apple _black.svg" alt="apple" />
+                        <p>MacBook</p>
+                    </h1>
+                    <h3 class="black">
+                        Siêu mỏng, siêu nhanh để làm việc, giải trí
+                    </h3>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Thông báo cho tôi <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 section4__item">
+                <div class="background background--airpod" style="background-image: url(./img/airpod1.png)"></div>
+
+                <div class="top__title">
+                    <h1 class="black logo--inline">
+                        <img src="./svg/apple _black.svg" alt="apple" />
+                        <p>AirPods</p>
+                    </h1>
+                    <h3 class="black">
+                        Đắm chìm trong thế giới âm thanh.
+                    </h3>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 section4__item">
+                <div class="background" style="background-image: url(./img/s-4.6.jpg)"></div>
+
+                <div class="top__title">
+                    <h1 class="black">TV+</h1>
+                    <div class="subTitle">
+                        <h3 class="black">
+                            Phát trực tuyến miễn phí độc quyền đến hết ngày 26 tháng 10.
+                        </h3>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Xem ngay <img src="./svg/play.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" style="width: 100%;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/carousel1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block carousel1">
+                        <h5>Đâu là cách tốt nhất để mua iPhone?</h5>
+                        <p>Có rất nhiều lựa chọn tuyệt vời để mua iPhone. Dù bạn mua từ nhà bán lẻ, nhà mạng hay trực tuyến, tìm cho mình lựa chọn tốt nhất chưa bao giờ dễ dàng hơn.</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-blue.svg" alt="" width="10px" height="18px" /></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block carousel2">
+                        <div class="d-flex justify-content-center align-items-baseline">
+                            <img src="./svg/apple _black.svg" alt="apple" width="18px" height="18px" />
+                            <h5>iPhone 12</h5>
+                        </div>
+                        <p>Camera mới. Thiết kế mới.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/apple.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block carousel3">
+                        <h5>Worldwide Developers Conference 2023</h5>
+                        <p>Hãy tham gia cùng chúng tôi để có một tuần đầy hứng khởi về công nghệ và cộng đồng. Hãy là một trong những người đầu tiên tìm hiểu thông tin mới nhất về nền tảng, công nghệ và công cụ của Apple. Bạn cũng sẽ có cơ hội tương tác
+                            với các chuyên gia của Apple và các nhà phát triển khác. Tất cả trực tuyến và miễn phí.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="row">
+            <div class="col-lg-12 section5__item">
+                <div class="background" id="background-sec5-1" style="background-image: url(./img/ios17.jpg)"></div>
+
+                <div class="top__title section5__title">
+                    <h1 class="black">iOS 17</h1>
+                    <h3 class="black">Như mọi ngày. Nay càng thêm tuyệt.</h3>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 section5__item">
+                <div class="background" id="background-sec5" style="background-image: url(./img/section5.jpg)"></div>
+
+                <div class="top__title">
+                    <h1 class="black content_fix">Chuyển sang iPhone quả là siêu đơn giản.</h1>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 section5__item">
+                <div class="background" style="background-image: url(./img/section5-2.jpg)"></div>
+
+                <div class="top__title">
+                    <h1 class="top__title-content content_fix">Cách iPhone giúp bảo vệ quyền riêng tư của bạn.</h1>
+                    <div class="top__title--links">
+                        <a href="" class="dark-blue " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Tìm hiểu thêm <img src="./svg/right-arrow-darkBlue.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer1">
+        <div class="footer1__wrapper">
+            <ul>
+                <li>1.Sản phẩm của nhóm BE_A</li>
+                <li>
+                    2.Dựa trên thiết kế từ Apple.com
+                </li>
+                <li>3.iPhone 14, iPhone 14 Pro, iPhone 15 và iPhone 15 Pro có thể phát hiện va chạm ô tô nghiêm trọng và gọi trợ giúp. Yêu cầu kết nối mạng di động hoặc cuộc gọi Wi-Fi.</li>
+                <li>
+                    4.Tất cả các xác nhận về thời lượng pin phụ thuộc vào cấu hình mạng và nhiều yếu tố khác; các kết quả thực tế sẽ khác nhau. Pin có giới hạn chu kỳ sạc và cuối cùng có thể cần được thay thế. Thời lượng pin và chu kỳ sạc khác nhau tùy theo cách sử dụng
+                    và cài đặt.
+                </li>
+            </ul>
+
+            <div class="footer1__links">
+                <div class="footer1__links--column">
+                    <div class="footer1__links--column-title">Mua Sắm Và Tìm Hiểu</div>
+                    <a href="">Mac</a>
+                    <a href="">iPad</a>
+                    <a href="">iPhone</a>
+                    <a href="">Watch</a>
+                    <a href="">TV</a>
+                    <a href="">Music</a>
+                    <a href="">AirPods</a>
+                </div>
+
+                <div class="footer1__links--column">
+                    <div class="footer__links--column-title">Dịch Vụ</div>
+                    <a href="">Apple Music</a>
+                    <a href="">Apple TV+</a>
+                    <a href="">Apple Fitness+</a>
+                    <a href="">Apple News+</a>
+                    <a href="">Apple Arcade</a>
+                    <a href="">iCloud</a>
+                    <div class="footer__links--column-title">Tài Khoản</div>
+                    <a href="">Quản lý tài khoản</a>
+                    <a href=""> Tài khoản Be A Store</a>
+                    <a href="">iCloud.com</a>
+                </div>
+
+                <div class="footer1__links--column">
+                    <div class="footer__links--column-title">Be A Store</div>
+                    <a href="">Tìm cửa hàng</a>
+                    <a href="">Cửa hàng online</a>
+                    <a href="">Genius Bar</a>
+                </div>
+
+                <div class="footer1__links--column">
+                    <div class="footer__links--column-title">Dành cho Doanh Nghiệp</div>
+                    <a href="">Apple and Business</a>
+                    <a href="">Shop and Business</a>
+                    <div class="footer__links--column-title">Cho Giáo Dục</div>
+                    <a href="">Apple and Education</a>
+                    <a href="">Shop College</a>
+                    <div class="footer__links--column-title">Cho Chăm Sóc Sức Khỏe</div>
+                    <a href="">Health on Apple Watch</a>
+                    <a href="">Health Records on iPhone</a>
+                </div>
+
+                <div class="footer1__links--column">
+                    <div class="footer__links--column-title">Về Be A</div>
+                    <a href="">Những thành viên</a>
+                    <a href="">Lãnh đạo của Be A</a>
+                    <a href="">Liên hệ cho Be A</a>
+                </div>
+            </div>
+
+            <div class="footer1__more">
+                Xem thêm cách để mua hàng: <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Tìm của hàng Be A</a> gần bạn.Hoặc gọi 03287423112.
+            </div>
+            <hr>
+            <div class="footer1__copyright">
+                <p>Copyright © 2023 Be A Inc. All rights reserved.</p>
+                <div class="links">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Sales and Refunds</a>
+                    <a href="">Site Map</a>
+                </div>
+                <a href="">Việt Nam</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
